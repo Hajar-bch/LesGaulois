@@ -13,14 +13,11 @@ public class TestGaulois {
 
 		asterix.parler("Bonjour à tous");
 		minus.parler("UN GAU… UN GAUGAU…");
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i <2; i++) {
 			asterix.frapper(minus);
-			if (minus.getForce() <= 0) {
-				break;
-			}
 			minus.frapper(asterix);
 		}
-
+		asterix.frapper(minus);
 	}
 
 }

@@ -26,7 +26,7 @@ public abstract class Personnage {
 	protected abstract String donnerAuteur();
 
 	public void frapper(Personnage personnage) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + personnage.getNom());
+		System.out.println(donnerAuteur() + " envoie un grand coup dans la mâchoire de " + personnage.getNom());
 		int forceCoup = force / 3;
 		personnage.recevoirCoup(forceCoup);
 	}

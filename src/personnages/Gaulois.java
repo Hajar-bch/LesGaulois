@@ -9,7 +9,7 @@ public class Gaulois extends Personnage {
 
 	@Override
 	protected String donnerAuteur() {
-		return " Le gaulois ";
+		return "Le gaulois ";
 	}
 
 	// main C
@@ -17,7 +17,7 @@ public class Gaulois extends Personnage {
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix.getNom());
 		asterix.parler("Bonjour à tous");
-		Gaulois vercingetorix = new Gaulois("Vercingétorix", 2);
+		Gaulois vercingetorix = new Gaulois("Vercingétorix", 5);
 	}
 
 }
