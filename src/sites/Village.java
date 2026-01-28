@@ -17,15 +17,14 @@ public class Village {
 	}
 
 	public void ajouterVillageois(Gaulois gaulois) {
-		if (nbVillageois< villageois.length) {
-			villageois[nbVillageois]= gaulois;
+		if (nbVillageois < villageois.length) {
+			villageois[nbVillageois] = gaulois;
 			nbVillageois++;
-			System.out.println(donnerAuteur()+ " Vercingétorix : « Bienvenue"+ gaulois.getNom()+ " ! ».");
-			
-		}else {
-			System.out.println(donnerAuteur()+ "Vercingétorix : « Désolé Prolix mon village est déjà bien rempli. »")
+			chef.parler(" : « Bienvenue " + gaulois.getNom() + " ! ».");
+
+		} else {
+			chef.parler(" « Désolé "+ gaulois.getNom()+ " mon village est déjà bien rempli. »");
 		}
-		
 
 	}
 
@@ -36,7 +35,10 @@ public class Village {
 		}
 	}
 
-	public void changerChef() {
+	public void changerChef(Gaulois nouveauChef) {
+		this.chef.parler("Je laisse mon grand bouclier au grand " + nouveauChef.getNom());
+		this.chef = nouveauChef;
+		this.chef.parler("Merci !");
 
 	}
 

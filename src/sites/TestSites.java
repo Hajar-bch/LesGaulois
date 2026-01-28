@@ -32,17 +32,19 @@ public class TestSites {
 		village.ajouterVillageois(obelix);
 		village.ajouterVillageois(prolix);
 
-		village.changerChef(abraracourcix);
 
 		camp.ajouterSoldat(brutus);
 		camp.ajouterSoldat(milexcus);
 		camp.ajouterSoldat(tulliusOctopus);
 		camp.ajouterSoldat(minus);
 
-		camp.changerCommandant(chorus);
-
+		
 		village.afficherVillageois();
 		camp.afficherCamp();
+		
+		
+		village.changerChef(abraracourcix);
+		camp.changerCommandant(chorus);
 
 	}
 
